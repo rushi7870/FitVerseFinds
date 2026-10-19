@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FitVerse_Finds | Fashion Fits & Finds</title>
+<meta name="description" content="FitVerse_Finds: discover AI fashion inspiration, men’s and women’s outfit ideas, and curated fashion finds. Shop through affiliate links.">
+<meta name="theme-color" content="#111111">
+<link rel="icon" href="logo.webp">
+<meta property="og:title" content="FitVerse_Finds | Fashion Fits & Finds">
+<meta property="og:description" content="Men’s and women’s fashion inspiration, trending outfits, and curated shopping finds.">
+<style>
+:root{--bg:#fff;--fg:#111;--btn:#f1f1f1;--btnh:#e3e3e3;--line:#e3e3e3;--mute:#666;--y:#111111;--onY:#ffffff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121212;--fg:#f2f2f2;--btn:#232323;--btnh:#303030;--line:#333;--mute:#a0a0a0}}
+:root[data-theme="dark"]{--bg:#121212;--fg:#f2f2f2;--btn:#232323;--btnh:#303030;--line:#333;--mute:#a0a0a0}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--fg);font:500 16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+:focus-visible{outline:3px solid #2563eb;outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.ib{width:42px;height:42px;display:grid;place-items:center;border:0;border-radius:50%;background:none;color:var(--fg);cursor:pointer;padding:0}
+.ib:hover{background:var(--btn)}
+.hd{position:sticky;top:env(safe-area-inset-top,0px);z-index:12;border-bottom:1px solid var(--line);background:var(--bg)}
+.hi{display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px 12px;max-width:1240px;margin:0 auto;padding:8px 16px}
+.bn{display:flex;align-items:center;gap:10px;padding:0;border:0;background:none;color:inherit;font:inherit;font-size:1.2rem;font-weight:800;cursor:pointer;justify-self:start}
+.av{width:44px;height:44px;border-radius:50%;object-fit:cover}
+.srch{grid-column:1/-1;grid-row:2}
+#q{width:100%;padding:11px 16px;border:1px solid var(--line);border-radius:99px;background:var(--btn);color:var(--fg);font:inherit}
+#q::placeholder{color:var(--mute)}
+.act{display:flex;align-items:center;gap:4px}
+.dnav{display:none}
+.dnav .link{padding:8px 10px;text-decoration:none;font-weight:600;border-radius:8px}
+.dnav .link:hover{background:var(--btn)}
+.pg{max-width:1240px;margin:0 auto;padding:16px 16px 0}
+.hero{padding:26px 20px;border-radius:18px;background:var(--y);color:var(--onY);text-align:center}
+.hero h1{margin:0 0 6px;font-size:clamp(1.5rem,5vw,2.4rem);font-weight:800;letter-spacing:-.01em;line-height:1.15}
+.hero p{margin:0 auto;max-width:44ch}
+.chips{display:flex;gap:8px;overflow-x:auto;margin:18px 0 0;padding:2px 0;scrollbar-width:none}
+.chip{flex:none;padding:7px 15px;border:0;border-radius:99px;background:var(--btn);color:var(--fg);font:inherit;font-size:.9rem;font-weight:600;cursor:pointer}
+.chip:hover{background:var(--btnh)}
+.chip[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
+.meta{display:flex;justify-content:space-between;align-items:center;margin:18px 2px 14px;color:var(--mute);font-size:.9rem}
+select{padding:6px 10px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--fg);font:inherit;font-size:.9rem}
+#links{--cw:150px;display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--cw),1fr));gap:14px}
+.lnk{display:flex;flex-direction:column;overflow:hidden;border:1px solid var(--line);border-radius:14px;background:var(--bg);color:var(--fg);text-decoration:none;transition:box-shadow .15s,border-color .15s}
+.lnk:hover,.lnk:focus-visible{border-color:var(--fg);box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.pi,.ph{display:block;width:100%;aspect-ratio:1;object-fit:contain;background:#fff}
+.ph{display:grid;place-items:center;background:var(--btn);color:var(--mute)}
+.pn{display:-webkit-box;-webkit-line-clamp:2;line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;padding:10px 12px 12px;font-weight:600;font-size:.92rem;line-height:1.3}
+.none{grid-column:1/-1;margin:24px 0;text-align:center;color:var(--mute)}
+.ft{margin-top:48px;padding:28px 16px 100px;border-top:1px solid var(--line);background:var(--btn)}
+.fi{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;max-width:1240px;margin:0 auto;font-size:.85rem;color:var(--mute)}
+.fd{flex:1 1 360px;max-width:62ch;margin:0}
+.fm{margin:0}
+@media(min-width:640px){#links{--cw:190px;gap:18px}.hero{padding:40px 24px}}
+@media(min-width:760px){.hi{grid-template-columns:auto 1fr auto;gap:16px}.srch{grid-column:2;grid-row:1;width:100%;max-width:520px;justify-self:center}.dnav{display:flex;gap:4px;margin-right:6px}.mb{display:none}.pg{padding-top:22px}}
+@media(min-width:1024px){#links{--cw:220px;gap:20px}}
+#scrim{position:fixed;inset:0;z-index:15;background:rgba(0,0,0,.45)}
+#drawer{position:fixed;top:0;bottom:0;left:0;z-index:20;width:min(80vw,300px);padding:calc(14px + env(safe-area-inset-top,0px)) 8px 14px;background:var(--bg);box-shadow:2px 0 18px rgba(0,0,0,.25)}
+#drawer .ib{margin-bottom:6px}
+.mi{display:block;width:100%;padding:14px 16px;border:0;border-radius:10px;background:none;color:var(--fg);font:inherit;font-weight:600;text-align:left;cursor:pointer}
+.mi:hover{background:var(--btn)}
+dialog{width:min(92vw,420px);max-height:86vh;padding:18px;border:1px solid var(--line);border-radius:16px;background:var(--bg);color:var(--fg)}
+dialog::backdrop{background:rgba(0,0,0,.5)}
+.dh{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+h2{margin:0;font-size:1.15rem}
+#dB p{margin:0 0 10px;color:var(--mute);font-size:.92rem}
+.row{display:block;width:100%;padding:12px 14px;margin:0 0 8px;border:0;border-radius:10px;background:var(--btn);color:var(--fg);font:inherit;font-weight:600;text-align:left;text-decoration:none;cursor:pointer}
+.row:hover{background:var(--btnh)}
+.fld{display:block;width:100%;margin:0 0 8px;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--fg);font:inherit}
+.blk{background:var(--fg);color:var(--bg);text-align:center}
+.blk:hover{background:var(--fg);opacity:.85}
+.up{display:block;font-size:.88rem;color:var(--mute)}
+.up .fld{margin-top:4px}
+dialog{overflow:auto}
+.del{display:flex;justify-content:space-between;gap:8px;align-items:center;font-size:.9rem;margin:6px 0}
+.link{border:0;background:none;color:inherit;text-decoration:underline;font:inherit;cursor:pointer}
+#cookie{position:fixed;left:0;right:0;bottom:0;z-index:10;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;justify-content:center;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--line);background:var(--bg);font-size:.85rem;box-shadow:0 -4px 16px rgba(0,0,0,.08)}
+#cookie p{margin:0;max-width:46ch}
+#cookie .row{display:inline-block;width:auto;margin:0;padding:8px 14px;text-align:center}
+#toast{position:fixed;left:50%;bottom:calc(96px + env(safe-area-inset-bottom,0px));z-index:30;transform:translateX(-50%);max-width:90vw;padding:8px 16px;border-radius:99px;background:#111;color:#fff;font-size:.9rem}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="hd">
+  <div class="hi">
+    <button class="bn" data-go="home" aria-label="FitVerse Finds, back to top"><img class="av" src="fitverse_finds_logo.png" alt=""><span>FitVerse_Finds</span></button>
+    <div class="srch"><label class="sr" for="q">Search products</label><input id="q" type="search" placeholder="Search fashion finds" autocomplete="off"></div>
+    <div class="act">
+      <nav class="dnav" aria-label="Main"><button class="link" data-go="home">Home</button><button class="link" data-go="about">About us</button></nav>
+      <button class="ib" id="shareBtn" aria-label="Share"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5M5 14v6h14v-6"/></svg></button>
+      <button class="ib mb" id="menuBtn" aria-label="Menu" aria-expanded="false"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main class="pg">
+  <section class="hero"><h1>FASHION • FITS • FINDS</h1><p>Discover men’s and women’s outfit inspiration, trending styles, and curated fashion finds. Tap a product to shop at the store.</p></section>
+  <div id="chips" class="chips" role="group" aria-label="Categories" hidden></div>
+  <div class="meta"><span id="count" aria-live="polite"></span><select id="sort" aria-label="Sort products"><option value="new">Newest first</option><option value="az">A to Z</option></select></div>
+  <nav id="links" aria-label="Products"></nav>
+</main>
+
+<footer class="ft"><div class="fi">
+  <p class="fd"><b><i>Disclosure: This site may contain affiliate links. We may earn a commission from qualifying purchases at no extra cost to you. Product details, prices, sizes, and availability are controlled by the seller. #FitVerseFinds</i></b></p>
+  <p class="fm"><span id="tap">&copy; <span id="yr"></span> FitVerse_Finds</span> &nbsp; <button class="link" data-go="about">About us</button> &nbsp; <button class="link" data-go="cookies">Cookie policy</button><span data-own hidden> &nbsp; <button class="link" data-go="manage">Manage products</button></span></p>
+</div></footer>
+
+<div id="scrim" hidden></div>
+<nav id="drawer" aria-label="Menu" hidden>
+  <button class="ib" id="menuClose" aria-label="Close menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+  <button class="mi" data-go="home">Home</button>
+  <button class="mi" data-go="about">About us</button>
+  <button class="mi" data-go="cookies">Cookie policy</button>
+  <button class="mi" data-go="manage" data-own hidden>Manage products</button>
+</nav>
+
+<dialog id="dlg" aria-labelledby="dT">
+  <div class="dh"><h2 id="dT"></h2><button class="ib" data-close aria-label="Close"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div id="dB"></div>
+</dialog>
+
+<div id="cookie" role="region" aria-label="Cookie notice" hidden>
+  <p>We and our partners use cookies to remember your settings. <button class="link" data-go="cookies">Cookie policy</button></p>
+  <span><button class="row" id="rej">Reject non-necessary</button> <button class="row blk" id="acc">Accept all</button></span>
+</div>
+<div id="toast" role="status" hidden></div>
+
+<script>
+/* Only needed if the site is NOT on github.io (for example your own domain): fill in your GitHub user name and repository name. */
+const GH={owner:"",repo:""};
+const $=s=>document.querySelector(s);
+const ls={g(k){try{return localStorage.getItem(k)}catch(e){return null}},s(k,v){try{localStorage.setItem(k,v);return true}catch(e){return false}}};
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+let items=[],pend={},ed=-1,cat="All",q="",sort="new",synced=false,tt;
+const cart='<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7.5a2.2 2.2 0 1 0-2.2-2.2"/><path d="M12 7.5 3.5 14h17L12 7.5Z"/></svg>';
+const toast=m=>{const t=$("#toast");t.textContent=m;t.hidden=false;clearTimeout(tt);tt=setTimeout(()=>t.hidden=true,3500)};
+async function copy(text,msg){try{await navigator.clipboard.writeText(text)}catch(e){const a=document.createElement("textarea");a.value=text;a.style.cssText="position:fixed;opacity:0";(document.querySelector("dialog[open]")||document.body).append(a);a.select();let ok=false;try{ok=document.execCommand("copy")}catch(_){}a.remove();if(!ok)return toast("Copy was blocked. Select the text and copy it by hand.")}toast(msg)}
+
+/* ---------- shop ---------- */
+function render(){
+  const cs=[...new Set(items.map(i=>i.c).filter(Boolean))];
+  if(!cs.includes(cat))cat="All";
+  const ch=$("#chips");ch.hidden=!cs.length;
+  ch.innerHTML=cs.length?["All",...cs].map(c=>`<button class="chip" aria-pressed="${c===cat}" data-c="${esc(c)}">${esc(c)}</button>`).join(""):"";
+  let v=items.filter(i=>(cat==="All"||i.c===cat)&&(i.t+" "+(i.c||"")).toLowerCase().includes(q));
+  if(sort==="az")v=v.slice().sort((a,b)=>a.t.localeCompare(b.t));
+  $("#count").textContent=v.length+(v.length===1?" product":" products");
+  $("#links").innerHTML=v.map(i=>`<a class="lnk" href="${esc(i.u)}" target="_blank" rel="sponsored noopener noreferrer">${i.img?`<img class="pi" src="${esc(pend[i.img]||i.img)}" alt="" loading="lazy">`:`<span class="ph">${cart}</span>`}<span class="pn">${esc(i.t)}</span></a>`).join("")||`<p class="none">${items.length?"No products match your search.":"No products yet. Please check back soon."}</p>`}
+async function boot(){
+  $("#links").innerHTML='<p class="none">Loading products...</p>';
+  try{const r=await fetch("products.json?v="+Date.now(),{cache:"no-store"});if(!r.ok)throw 0;const a=await r.json();if(!Array.isArray(a))throw 0;items=a;render()}
+  catch(e){items=[];$("#count").textContent="";$("#links").innerHTML='<p class="none">Products could not be loaded. Please refresh the page in a moment.</p>'}
+}
+$("#chips").onclick=e=>{const b=e.target.closest("[data-c]");if(b){cat=b.dataset.c;render()}};
+$("#q").oninput=e=>{q=e.target.value.trim().toLowerCase();render()};
+$("#sort").onchange=e=>{sort=e.target.value;render()};
+
+/* ---------- dialogs and pages ---------- */
+function show(t,h){$("#dT").textContent=t;$("#dB").innerHTML=h;const d=$("#dlg");if(!d.open)d.showModal()}
+function share(){
+  const u=encodeURIComponent(location.href),t=encodeURIComponent("Discover FitVerse_Finds fashion finds");
+  const L=[["Facebook",`https://www.facebook.com/sharer.php?u=${u}`],["iMessage",`sms:?&body=${t}%20${u}`],["WhatsApp",`https://wa.me/?text=${t}%20${u}`],["Twitter",`https://twitter.com/intent/tweet?text=${t}&url=${u}`],["Line",`https://social-plugins.line.me/lineit/share?url=${u}`],["Kakao",`https://story.kakao.com/share?url=${u}`],["Reddit",`https://www.reddit.com/submit?url=${u}&title=${t}`],["LinkedIn",`https://www.linkedin.com/sharing/share-offsite/?url=${u}`],["Email",`mailto:?subject=${t}&body=${u}`]];
+  show("Share",L.map(([n,h])=>`<a class="row" href="${h}" target="_blank" rel="noopener noreferrer">${n}</a>`).join("")+`<input class="fld" readonly value="${esc(location.href)}" aria-label="Page link"><button class="row blk" data-act="copy">Copy link</button>`+(navigator.share?'<button class="row" data-act="native">Share from your device</button>':""));
+}
+function about(){show("About FitVerse_Finds","<p>FitVerse_Finds shares men’s and women’s fashion inspiration, AI-generated outfit videos, styling ideas, and curated fashion products. Select a product to view its listing on the retailer’s website.</p><p>Some links may be affiliate links. We may earn a commission from qualifying purchases at no extra cost to you. Always check the retailer’s listing for accurate product details, sizing, price, and availability.</p>")}
+function cookies(){show("Cookie policy","<p>We use cookies and similar storage only to remember your choices on this device, such as this notice. We do not use them to track you across other sites.</p><p>Affiliate links open store websites that have their own cookie policies.</p>")}
+const go={home(){scrollTo({top:0})},about,cookies,manage};
+const menu=o=>{$("#drawer").hidden=!o;$("#scrim").hidden=!o;$("#menuBtn").setAttribute("aria-expanded",o)};
+$("#menuBtn").onclick=()=>menu(true);
+$("#menuClose").onclick=$("#scrim").onclick=()=>menu(false);
+document.addEventListener("keydown",e=>{if(e.key==="Escape")menu(false)});
+document.addEventListener("click",e=>{const b=e.target.closest("[data-go]");if(b){menu(false);go[b.dataset.go]()}});
+$("#shareBtn").onclick=share;
+const d=$("#dlg");
+d.addEventListener("click",e=>{const r=d.getBoundingClientRect(),out=e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom;if((e.target===d&&out)||e.target.closest("[data-close]"))d.close()});
+
+/* ---------- owner tools: products are saved to your GitHub repository ---------- */
+const repo=()=>{let{owner,repo}=GH;if(!owner&&location.hostname.endsWith(".github.io")){owner=location.hostname.split(".")[0];repo=location.pathname.split("/")[1]||owner+".github.io"}return owner&&repo?{owner,repo}:null};
+const tok=()=>ls.g("fitverse-gh")||"";
+const owner=()=>!!tok();
+const applyOwner=()=>document.querySelectorAll("[data-own]").forEach(e=>e.hidden=!owner());
+const gh=(p,o={})=>{const r=repo();return fetch(`https://api.github.com/repos/${r.owner}/${r.repo}/${p}`,{...o,headers:{Accept:"application/vnd.github+json","Content-Type":"application/json",Authorization:"Bearer "+tok()}})};
+const b64=s=>btoa(unescape(encodeURIComponent(s)));
+async function fail(r){let m="";try{m=(await r.json()).message}catch(_){}return new Error(m||"error "+r.status)}
+async function put(path,content,msg){const g=await gh("contents/"+path);let sha;if(g.ok)sha=(await g.json()).sha;const r=await gh("contents/"+path,{method:"PUT",body:JSON.stringify({message:msg,content,sha})});if(!r.ok)throw await fail(r)}
+async function drop(path){if(!path||!path.startsWith("images/"))return;try{const g=await gh("contents/"+path);if(!g.ok)return;const sha=(await g.json()).sha;await gh("contents/"+path,{method:"DELETE",body:JSON.stringify({message:"Remove old fashion product image",sha})})}catch(_){}}
+const saveItems=msg=>put("products.json",b64(JSON.stringify(items,null,1)+"\n"),msg);
+async function pull(){const r=await gh("contents/products.json");if(r.status===404)items=[];else{if(!r.ok)throw await fail(r);const j=await r.json();items=JSON.parse(decodeURIComponent(escape(atob(j.content.replace(/\n/g,"")))))}synced=true;render()}
+const fit=file=>new Promise((res,rej)=>{const r=new FileReader();r.onerror=rej;r.onload=()=>{const im=new Image();im.onerror=rej;im.onload=()=>{const s=Math.min(1,700/Math.max(im.width,im.height)),c=document.createElement("canvas");c.width=Math.round(im.width*s);c.height=Math.round(im.height*s);const x=c.getContext("2d");x.fillStyle="#fff";x.fillRect(0,0,c.width,c.height);x.drawImage(im,0,0,c.width,c.height);res(c.toDataURL("image/jpeg",.82))};im.src=r.result};r.readAsDataURL(file)});
+function gate(){show("Owner sign in",repo()?'<p>Paste your GitHub token to manage fashion products. It is saved only on this device, and nobody can change the shop without it.</p><form id="pwForm"><input class="fld" id="pw" type="password" autocomplete="off" aria-label="GitHub token" required><button class="row blk">Connect GitHub</button></form>':"<p>Owner tools work once the site is on GitHub Pages. If you use your own domain, fill in GH.owner and GH.repo at the top of the page code.</p>")}
+async function manage(){
+  if(!owner())return gate();
+  if(!synced){toast("Loading from GitHub...");try{await pull()}catch(x){return toast("Could not load from GitHub: "+x.message)}}
+  const it=items[ed]||{},cs=[...new Set(items.map(i=>i.c).filter(Boolean))];
+  show("Manage products",`<p>Every change is saved to your GitHub repository. Visitors see it within a few minutes.</p><form id="addForm"><input class="fld" id="fT" placeholder="Product name" aria-label="Product name" required maxlength="200" value="${esc(it.t||"")}"><input class="fld" id="fU" type="url" placeholder="https://your-affiliate-link" aria-label="Affiliate link" required value="${esc(it.u||"")}"><input class="fld" id="fC" list="cats" placeholder="Category, e.g. Men, Women, Ethnic Wear (optional)" aria-label="Category" maxlength="30" value="${esc(it.c||"")}"><datalist id="cats">${cs.map(c=>`<option value="${esc(c)}">`).join("")}</datalist><label class="up">${it.img?"Change product image":"Product image (choose a file, or paste a copied image)"}<input class="fld" id="fI" type="file" accept="image/*"></label>${it.img?`<img class="pi" style="width:88px;margin:0 0 8px;border:1px solid var(--line);border-radius:10px" src="${esc(pend[it.img]||it.img)}" alt="">`:""}<button class="row blk">${ed>-1?"Save product":"Add fashion product"}</button>${ed>-1?'<button type="button" class="row" data-act="cancel">Cancel</button>':""}</form><div style="max-height:170px;overflow:auto;margin:8px 0">`+(items.map((i,n)=>`<div class="del"><span>${esc(i.t)}</span><span><button class="link" data-act="edit" data-i="${n}">Edit</button> <button class="link" data-act="del" data-i="${n}" aria-label="Delete ${esc(i.t)}">Delete</button></span></div>`).join("")||"<p>No products yet.</p>")+`</div><button class="row" data-act="lock">Disconnect GitHub on this device</button>`);
+}
+d.addEventListener("paste",e=>{const f=[...(e.clipboardData?.files||[])].find(x=>x.type.startsWith("image/")),i=$("#fI");if(f&&i){e.preventDefault();const dt=new DataTransfer();dt.items.add(f);i.files=dt.files;toast("Image pasted. Now save the product.")}});
+$("#dB").onclick=async e=>{const b=e.target.closest("[data-act]");if(!b)return;const a=b.dataset.act;
+  if(a==="copy")copy(location.href,"Link copied");
+  if(a==="native")navigator.share({title:"FitVerse_Finds",url:location.href}).catch(()=>{});
+  if(a==="edit"){ed=+b.dataset.i;manage()}
+  if(a==="cancel"){ed=-1;manage()}
+  if(a==="lock"){ls.s("fitverse-gh","");synced=false;ed=-1;applyOwner();d.close();toast("Disconnected from GitHub")}
+  if(a==="del"){const prev=items,gone=items[+b.dataset.i]||{};items=items.filter((_,n)=>n!==+b.dataset.i);ed=-1;toast("Saving to GitHub...");try{await saveItems("Delete fashion product");await drop(gone.img);render();manage();toast("Deleted. Visitors see it within a few minutes.")}catch(x){items=prev;toast("GitHub did not save it: "+x.message)}}};
+$("#dB").onsubmit=async e=>{e.preventDefault();
+  if(e.target.id==="pwForm"){ls.s("fitverse-gh",$("#pw").value.trim());toast("Checking token...");try{await pull();applyOwner();return manage()}catch(x){ls.s("fitverse-gh","");synced=false;applyOwner();return toast("GitHub rejected that token: "+x.message)}}
+  const u=$("#fU").value.trim();if(!/^https?:\/\//i.test(u))return toast("The link must start with http:// or https://");
+  const f=$("#fI").files[0],was=ed>-1,prev=items;let img=(items[ed]||{}).img||"";const oldImg=img;
+  toast("Saving to GitHub...");
+  try{
+    if(f){const data=await fit(f),p="images/"+Date.now()+".jpg";await put(p,data.split(",")[1],"Add fashion product image");pend[p]=data;img=p}
+    const n={t:$("#fT").value.trim(),u,c:$("#fC").value.trim(),img};
+    items=items.slice();if(was)items[ed]=n;else items.unshift(n);
+    await saveItems(was?"Update fashion product":"Add fashion product");
+    if(f&&oldImg&&oldImg!==img)await drop(oldImg);
+    ed=-1;render();manage();toast("Saved. Visitors will see it within a few minutes.");
+  }catch(x){items=prev;toast("GitHub did not save it: "+x.message)}};
+let tap=0,tapT;$("#tap").onclick=()=>{tap++;clearTimeout(tapT);tapT=setTimeout(()=>tap=0,3000);if(tap>=5){tap=0;manage()}};
+
+/* ---------- cookie notice ---------- */
+if(!ls.g("fitverse-cookie"))$("#cookie").hidden=false;
+$("#acc").onclick=()=>{ls.s("fitverse-cookie","all");$("#cookie").hidden=true};
+$("#rej").onclick=()=>{ls.s("fitverse-cookie","necessary");$("#cookie").hidden=true};
+applyOwner();
+$("#yr").textContent=new Date().getFullYear();
+boot();
+</script>
+</body>
+</html>
